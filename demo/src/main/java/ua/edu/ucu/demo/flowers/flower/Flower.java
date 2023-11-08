@@ -7,7 +7,8 @@ import lombok.Getter;
 public class Flower {
     public Flower(Flower flower) {
     }
-    private double price;
     private double sepalLength;
+    private double price;
     private FlowerColor color;
+
 }

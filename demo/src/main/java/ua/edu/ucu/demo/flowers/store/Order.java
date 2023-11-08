@@ -26,9 +26,13 @@ public class Order {
         this.delivery = newDelivery;
     }
 
+    public String deliveryResult() {
+        return this.delivery.deliver(this.items);
+    }
+
     public int calculateTotalPrice() {
         int total = 0;
-        for(Item item: items) {
+        for (Item item: items) {
             total += item.getPrice();
         }
         return total;

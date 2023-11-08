@@ -5,37 +5,47 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 
-import java.util.List;
-import java.util.Random;
 import ua.edu.ucu.demo.flowers.store.Order;
 import ua.edu.ucu.demo.flowers.delivery.DHLDeliveryStrategy;
 import ua.edu.ucu.demo.flowers.delivery.PostDeliveryStrategy;
 
 
 public class FlowerDeliveryTest {
-    // private static 
     @BeforeEach
     public void init() {
-        Order roseFlowerOrder= new Order();
-        Order justFlowerOrder= new Order();
-        Order tulipFlowerOrder= new Order();
+        Order roseFlowerOrder = new Order();
+        Order justFlowerOrder = new Order();
+        Order tulipFlowerOrder = new Order();
 
         PostDeliveryStrategy post = new PostDeliveryStrategy();
         DHLDeliveryStrategy dhl = new DHLDeliveryStrategy();
 
-        String postResult = "Your order will arrive in a week! It takes some time to process the order by post";
+        String postResult = 
+        "Your order will arrive in a week! It takes some time to process the order by post";
+        
+        String DHLResult = "Your order will arrive in 3 days! DHL is so fast)";
 
     }
 
     @Test
-    public void testDelivery() {
+    public void testPost() {
 
         roseFlowerOrder.setDeliveryStrategy(post);
-        String result = roseFlowerOrder.delivery.deliver(roseFlowerOrder.items);
+        String result = roseFlowerOrder.deliveryResult();
 
         Assertions.assertEquals(result, postResult);
     }
 
 
+    @Test
+    public void testDHL() {
+        tulipFlowerOrder.setDeliveryStrategy(dhl);
+
+        String result = tulipFlowerOrder.deliveryResult();
+
+        Assertions.assertEquals(result, DHLResult);
+
+
+    }
 }
 

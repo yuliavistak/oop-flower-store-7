@@ -17,7 +17,9 @@ public class FlowerController {
 
     @GetMapping("/list")
 	public List<Flower> getFlower() {
-		return List.of(new Flower(45, 0.8, FlowerColor.RED));
+		int price = 45;
+		int sepal = 0.8;
+		return List.of(new Flower(price, sepal, FlowerColor.RED));
 		
 	}
     

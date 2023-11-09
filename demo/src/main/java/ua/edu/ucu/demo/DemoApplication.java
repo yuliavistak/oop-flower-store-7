@@ -10,23 +10,19 @@ public class DemoApplication {
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
     }
+
+    // @GetMapping("/hello")
+    // public String getHello() {
+    //     return "Hello";
+    // }
+
+    // @GetMapping("/flower")
+    // public Flower getFlower() {
+    //     return new Flower(45, 0.8, FlowerColor.RED);
+    // }
+
+    // @GetMapping("/flower")
+    // public List<Flower> getFlower() {
+    //     return List.of(new Flower(45, 0.8, FlowerColor.RED));
+    // }
 }
-
-
-
-	// @GetMapping("/hello")
-	// public String getHello() {
-	// 	return "Hello";
-	// }
-
-	// @GetMapping("/flower")
-	// public Flower getFlower() {
-	// 	return new Flower(45, 0.8, FlowerColor.RED);
-	// }
-
-	// @GetMapping("/flower")
-	// public List<Flower> getFlower() {
-	// 	return List.of(new Flower(45, 0.8, FlowerColor.RED));
-		
-	// }
-

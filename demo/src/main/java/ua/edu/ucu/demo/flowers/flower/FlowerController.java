@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController // треба шукати url
 @RequestMapping("/api/flower")
 public class FlowerController {
-	@GetMapping("/hello")
+    @GetMapping("/hello")
 	public String getHello() {
 		return "Hello";
 	}

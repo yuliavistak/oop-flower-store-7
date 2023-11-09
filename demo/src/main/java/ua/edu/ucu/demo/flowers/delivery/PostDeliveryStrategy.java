@@ -6,8 +6,7 @@ import ua.edu.ucu.demo.flowers.flower.Item;
 
 public class PostDeliveryStrategy implements Delivery {
     public String deliver(List<Item> items) {
-        String res = 
-        "Your order will arrive in a week! It takes some time to process the order by post";
+        String res = "Order will arrive in a week!";
         return res;
     }
 

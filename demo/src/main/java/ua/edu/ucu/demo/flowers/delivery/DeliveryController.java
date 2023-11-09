@@ -13,14 +13,14 @@ public class DeliveryController {
     @GetMapping("/post")
     public String getPost() {
         String res = 
-        "Your choice is successfully saved. Delivery details: Post, 7 days waiting";
+        "Choice is saved. Delivery details: Post, 7 days waiting";
         return res;
     }
 
     @GetMapping("/DHL")
     public String getDHL() {
         String res = 
-        "Your choice is successfully saved. Delivery details: DHL, 3 days waiting";
+        "Choice is saved. Delivery details: DHL, 3 days waiting";
         return res;
     }
 } 

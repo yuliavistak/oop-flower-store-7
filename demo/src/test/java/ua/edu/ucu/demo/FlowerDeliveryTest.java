@@ -21,9 +21,9 @@ public class FlowerDeliveryTest {
         DHLDeliveryStrategy dhl = new DHLDeliveryStrategy();
 
         String postResult = 
-        "Your order will arrive in a week! It takes some time to process the order by post";
+        "Order will arrive in a week!";
         
-        String DHLResult = "Your order will arrive in 3 days! DHL is so fast)";
+        String dhlResult = "Order will arrive in 3 days! DHL is so fast)";
 
     }
 
@@ -43,7 +43,7 @@ public class FlowerDeliveryTest {
 
         String result = tulipFlowerOrder.deliveryResult();
 
-        Assertions.assertEquals(result, DHLResult);
+        Assertions.assertEquals(result, dhlResult);
 
 
     }

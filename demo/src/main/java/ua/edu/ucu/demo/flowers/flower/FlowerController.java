@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController // треба шукати url
 @RequestMapping("/api/flower")
 public class FlowerController {
+	public int price = 45;
+	public int sepal = 0.8;
 
 	@GetMapping("/hello")
 	public String getHello() {
@@ -17,8 +19,6 @@ public class FlowerController {
 
     @GetMapping("/list")
 	public List<Flower> getFlower() {
-		int price = 45;
-		int sepal = 0.8;
 		return List.of(new Flower(price, sepal, FlowerColor.RED));
 		
 	}

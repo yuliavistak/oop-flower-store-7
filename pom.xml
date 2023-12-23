@@ -8,11 +8,11 @@
         <version>3.1.5</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>ucu.edu.apps</groupId>
-    <artifactId>FlowerStoreForever</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>FlowerStoreForever</name>
-    <description>FlowerStoreForever</description>
+        <groupId>ucu.edu.apps</groupId>
+            <artifactId>FlowerStoreForever</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            <name>FlowerStoreForever</name>
+        <description>FlowerStoreForever</description>
     <properties>
         <java.version>17</java.version>
     </properties>

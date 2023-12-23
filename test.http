@@ -5,8 +5,8 @@ POST http://localhost:8080/api/flower/add
 Content-Type: application/json
 
 {
-  "id": 1,
+  "id": 3,
   "sepalLength": 100,
-  "color": "blue",
+  "color": "red",
   "price": 100
 }
